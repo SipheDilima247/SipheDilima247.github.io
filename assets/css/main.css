@@ -289,8 +289,6 @@ section {
   margin: 0;
 }
 
-
-
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
@@ -581,7 +579,7 @@ section {
 
 .hero h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
@@ -590,7 +588,7 @@ section {
 
 .hero h4 {
   margin: 0;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
@@ -624,16 +622,21 @@ section {
 }
 
 .hero .btn-watch-video {
-  font-size: 16px;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
   transition: 0.5s;
-  margin-left: 25px;
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-secondary);
 }
 
 .hero .btn-watch-video i {
   color: var(--color-primary);
-  font-size: 32px;
+  font-size: 25px;
   transition: 0.3s;
   line-height: 0;
   margin-right: 8px;
@@ -641,6 +644,7 @@ section {
 
 .hero .btn-watch-video:hover {
   color: #fff;
+  background: rgba(90, 184, 230, 0.8);
 }
 
 .hero .btn-watch-video:hover i {
@@ -656,6 +660,44 @@ section {
   .hero .btn-get-started,
   .hero .btn-watch-video {
     font-size: 13px;
+  }
+
+.hero .d-flex {
+  padding-right: 12px;
+}
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  padding: 12px 0;
+  text-align: center;
+}
+
+.clients .sign-in-btn{
+    padding-inline: 10px;
+    border-radius: 20pt;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.clients img {
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  filter: grayscale(100);
+}
+
+.clients img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .clients img {
+    max-width: 40%;
   }
 }
 
@@ -859,6 +901,13 @@ section {
 --------------------------------------------------------------*/
 .features {
   padding-bottom: 0;
+}
+
+.features .sign-in-btn{
+    padding-inline: 10px;
+    border-radius: 20pt;
+    background-color: var(--color-primary);
+    color: #fff;
 }
 
 .features h3 {
@@ -2188,7 +2237,15 @@ section {
 }
 
 .footer .footer-content h4 {
-  font-size: 16px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #29486a;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-content h2 {
+  font-size: 20px;
   font-weight: bold;
   color: #29486a;
   position: relative;
