@@ -610,7 +610,7 @@ section {
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 30px;
+  padding: 15px 30px;
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
@@ -627,7 +627,7 @@ section {
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 30px;
+  padding: 15px 30px;
   border-radius: 50px;
   transition: 0.5s;
   color: var(--color-primary);
@@ -974,6 +974,10 @@ section {
   font-size: 15px;
 }
 
+.features select {
+  font-size: 22px;
+  size: 0px;
+}
 .features .details .btn-get-started {
   font-family: var(--font-primary);
   display: inline-block;
