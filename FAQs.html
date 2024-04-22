@@ -25,6 +25,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5efac7f1a9.js" crossorigin="anonymous"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -57,6 +58,73 @@
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <div class="wrapper">
+      <nav id="navbar" class="navbar">
+        <a href="https://www.ecsa.co.za/_forms/default.aspx?ReturnUrl=%2f_layouts%2fauthenticate.aspx%3fsource%3d%2fsitepages%2fCouncil%2520Member%2520Documents.aspx&source=/sitepages/Council%20Member%20Documents.aspx"><button class="btn sign-in-btn d-none d-lg-flex">Council Sign-in</button></a> <br> 
+        <a href="https://engineeringcouncilsa.microsoftcrmportals.com/"><button class="btn sign-in-btn d-none d-lg-flex">ECSA Portal</button></a>
+        <a href="#popup-box"><button id="show" class="btn sign-in-btn d-none d-lg-flex">Who is Registered</button></a>
+
+
+          
+      </nav><!-- .navbar -->
+
+      
+        <div id="popup-box" class="modal">
+            <div class="content">
+                <h1>
+                    Search For Registered Candidates
+                </h1>
+                <br>
+                <div align="center">
+                <p>Search by Registration Number:<br>
+                  <input  type="number" placeholder="Registration Number">
+
+                <br><br>  
+                Last Name:<br>  
+                <input type="text" name="name" placeholder="Last Name"><br><br> 
+                Discipline:<br> 
+
+                 <select name="discipline" id="discipline"><option value="any">Any</option><option value="aeronautical">Aeronautical</option><option value="aeronautical">Agricultural</option><option value="aeronautical">All Disciplines</option><option value="aeronautical">Chemical</option><option value="aeronautical">Civil</option><option value="aeronautical">Computer</option><option value="aeronautical">Electrical</option><option value="aeronautical">Electrical & Electronics Engineering</option><option value="aeronautical">Electro Mechanical</option><option value="aeronautical">Fire Protection System Practitioners</option><option value="aeronautical">Industrial</option><option value="aeronautical">Lift Inspectors</option><option value="aeronautical">Lifting Machinery Inspector</option><option value="aeronautical">Marine</option><option value="aeronautical">Mechanical</option><option value="aeronautical">Mechatronics</option><option value="aeronautical">Medical Equipment Maintainers</option><option value="aeronautical">Metallurgical</option><option value="aeronautical">Mining</option><option value="aeronautical">Transportation</option></select>
+                 <br> <br> 
+                 Category:<br> 
+                 <select name="category" id="category"><option value="any">Any</option>
+                    <option value="candidate Certified Engineer">Candidate Certified Engineer</option>
+                    <option value="candidate engineer">Candidate Engineer</option>
+                    <option value="candidate engineering technician">Candidate Engineering Technician</option>
+                    <option value="candidate engineering technologist">Candidate Engineering Technologist</option>
+                    <option value="engineering technician(master)">Engneering Technician(Master)</option>
+                    <option value="fire protect sys rational design">Fire Protect Sys Rational Design</option>
+                    <option value="international professional engineer">International Professional Engineer</option>
+                    <option value="international professionl engineering technician">International Professional Engineering Technician</option>
+                    <option value="professional certificated engineer">Professional Certificated Engineer</option>
+                    <option value="professional engineer">Professional Engineer</option>
+                    <option value="professional engineering technician">Professional Engineering Technician</option>
+                    <option value="professional engineering technologist">Professional Engineering Technologist</option>
+                    <option value="registered civil technical laboratory controller">Registered Civil Technical Laboratory Controller</option>
+                    <option value="registered engineering technician">Registered Engineering Technician</option>
+                    <option value="registered fire protection system practitioner">Registered Fire Protection System Practitioner</option>
+                    <option value="registered lift inspector">Registered Lift Inspector</option>
+                    <option value="registered lift machinery inspector">Registered Lifting Machinery Inspector</option>
+                    <option value="registered medical equipment maintainer">Registered Medical Equipment Maintainer</option>
+                    <option value="technician-other">Technician-other</option></select>
+                </p>
+                <a href="#"><button class="sign-in-btn d-none d-lg-flex">Search</button></a>
+                <a
+                    href="#"
+                    style="
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        
+                        font-size: 30px;
+                        text-decoration: none;
+                    "
+                    >&times;</a>
+                
+              </div>
+            </div>
+        </div>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -108,10 +176,10 @@
                   <li><a href="#">New Candidate Applications</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="cpd.html"><span>Continuing Professional Development</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href="cpd.html"><span>Continuing<br>Professional<br>Development</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Rules On CPD</a></li>
-                  <li><a href="#">CPD ACTIVITIES</a></li>
+                  <li><a href="#">Rules on CPD</a></li>
+                  <li><a href="#">CPD Activities</a></li>
                   <li><a href="#">CPD Forms</a></li>
                   <li><a href="#">CPD - FAQ</a></li>
                   <li><a href="#">Annual Fees</a></li>
@@ -120,7 +188,7 @@
                 </ul>
 
               </li>
-              <li class="dropdown"><a href="Publications.html"><span>Publications & Documents</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href="Publications.html"><span>Publications</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="services.html">News</a></li>
               <li><a href="#">Speeches</a></li>
@@ -133,9 +201,9 @@
               <li><a href="#">Annual Reports</a></li>
               <li><a href="#">Interview Videos</a></li>
               <li><a href="#">Research Outputs</a> </li>
-              <li><a href="#">Regulatory Instruments</a></li>
             </ul>
           </li>
+          <li><a href="RegulatoryInstruments.html">Regulatory<br>Instruments</a></li>
           <li class="dropdown"><a href="Opportunities.html"><span>Opportunities</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
             <li><a href="Opportunities.html">Bursaries</a></li>
@@ -143,9 +211,9 @@
             <li><a href="OpportunitiesTenders.html">Tenders</a></li>
           </ul>
           </li>
-          <li><a href="https://engineeringcouncilsa.microsoftcrmportals.com/"><button class="btn sign-in-btn d-none d-lg-flex">ECSA Online Login</button></a></li>
         </ul>
       </nav><!-- .navbar -->
+    </div>
 
     </div>
   </header><!-- End Header -->
@@ -195,22 +263,21 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span>Engineering Council of</span>
+              <span><h4>Engineering Council of South Africa</h4></span>
             </a>
-            <a href="#" class="logo d-flex align-items-center"><span>South Africa</span></a>
             <p>Connect and follow us on our social media platforms.</p>
             <div class="social-links d-flex  mt-3">
-              <a href="https://twitter.com/ECSAOfficial" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://web.facebook.com/people/Engineering-Council-Of-South-Africa-ECSA" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://twitter.com/ECSAOfficial" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100040814995744" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ecsa.official/" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="https://za.linkedin.com/company/engineering-council-of-south-africa" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
-            <br><br><br><br>
-            <img src="assets/img/ISO 9001-English.png">
+            <br><br>
+            <a href="ECSA- ISO 9001-2015 Certificate.pdf"><img src="assets/img/ISO 9001-English.png"></a>
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Search</h4>
+            <h2>Search</h2>
             <form action="" class="mt-3"> 
               <input type="text">
                 <button class="search">
@@ -218,7 +285,17 @@
                 </button><br>
             </form>
             <br><br>
-            <p><a href="">FAQs</a></p>
+            <p><a href="FAQs.html">FAQs</a></p>
+            <p><a href="Regulation.html">Complaints of Misconduct</a></p>
+            <hr>
+            <br>
+            <h2>ECSA Vuvuzela Hotline</h2>
+            <p><a href="https://www.thehotline.co.za" class="web"><i class="bi bi-globe"></i> www.thehotline.co.za</a></p>
+            <p><a href="tel:+27806227767" class="web"><i class="bi bi-phone"></i> 0806227767</a></p>
+            <p><a href="mailto:ecsa@thehotline.co.za" class="web"><i class="bi bi-envelope"></i> ecsa@thehotline.co.za</a></p>
+            <p><a href="sms:30916" class="message"><i class="bi bi-chat"></i> 30916</a></p>
+            <br>
+            
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">

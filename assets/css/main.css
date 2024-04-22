@@ -289,6 +289,7 @@ section {
   margin: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
@@ -303,6 +304,15 @@ section {
     display: flex;
     list-style: none;
     align-items: center;
+  }
+
+  }
+
+  .navbar form{
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 250px;
+    size: 500px;
   }
 
   .navbar li {
@@ -417,6 +427,48 @@ section {
     display: none;
   }
 }
+
+.box {
+          
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+  .box a {
+                padding: 15px;
+                background-color: #fff;
+                border-radius: 3px;
+                text-decoration: none;
+            }
+
+  .modal {
+                position: fixed;
+                inset: 0;
+                backdrop-filter:  blur(35px);
+                display: none;
+                align-items: center;
+                justify-content: center;
+            }
+
+  .modal  .sign-in-btn{
+    padding-inline: 10px;
+    border-radius: 20pt;
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+
+  .content {
+                position: relative;
+                background: white;
+                padding: 1em 2em;
+                border-radius: 4px;
+            }
+
+  .modal:target {
+                display: flex;
+            }
 
 /*--------------------------------------------------------------
 # Mobile Navigation

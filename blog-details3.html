@@ -61,6 +61,72 @@
 
       <div class="wrapper">
       <nav id="navbar" class="navbar">
+        <a href="https://www.ecsa.co.za/_forms/default.aspx?ReturnUrl=%2f_layouts%2fauthenticate.aspx%3fsource%3d%2fsitepages%2fCouncil%2520Member%2520Documents.aspx&source=/sitepages/Council%20Member%20Documents.aspx"><button class="btn sign-in-btn d-none d-lg-flex">Council Sign-in</button></a> <br> 
+        <a href="https://engineeringcouncilsa.microsoftcrmportals.com/"><button class="btn sign-in-btn d-none d-lg-flex">ECSA Portal</button></a>
+        <a href="#popup-box"><button id="show" class="btn sign-in-btn d-none d-lg-flex">Who is Registered</button></a>
+
+
+          
+      </nav><!-- .navbar -->
+
+      
+        <div id="popup-box" class="modal">
+            <div class="content">
+                <h1>
+                    Search For Registered Candidates
+                </h1>
+                <br>
+                <div align="center">
+                <p>Search by Registration Number:<br>
+                  <input  type="number" placeholder="Registration Number">
+
+                <br><br>  
+                Last Name:<br>  
+                <input type="text" name="name" placeholder="Last Name"><br><br> 
+                Discipline:<br> 
+
+                 <select name="discipline" id="discipline"><option value="any">Any</option><option value="aeronautical">Aeronautical</option><option value="aeronautical">Agricultural</option><option value="aeronautical">All Disciplines</option><option value="aeronautical">Chemical</option><option value="aeronautical">Civil</option><option value="aeronautical">Computer</option><option value="aeronautical">Electrical</option><option value="aeronautical">Electrical & Electronics Engineering</option><option value="aeronautical">Electro Mechanical</option><option value="aeronautical">Fire Protection System Practitioners</option><option value="aeronautical">Industrial</option><option value="aeronautical">Lift Inspectors</option><option value="aeronautical">Lifting Machinery Inspector</option><option value="aeronautical">Marine</option><option value="aeronautical">Mechanical</option><option value="aeronautical">Mechatronics</option><option value="aeronautical">Medical Equipment Maintainers</option><option value="aeronautical">Metallurgical</option><option value="aeronautical">Mining</option><option value="aeronautical">Transportation</option></select>
+                 <br> <br> 
+                 Category:<br> 
+                 <select name="category" id="category"><option value="any">Any</option>
+                    <option value="candidate Certified Engineer">Candidate Certified Engineer</option>
+                    <option value="candidate engineer">Candidate Engineer</option>
+                    <option value="candidate engineering technician">Candidate Engineering Technician</option>
+                    <option value="candidate engineering technologist">Candidate Engineering Technologist</option>
+                    <option value="engineering technician(master)">Engneering Technician(Master)</option>
+                    <option value="fire protect sys rational design">Fire Protect Sys Rational Design</option>
+                    <option value="international professional engineer">International Professional Engineer</option>
+                    <option value="international professionl engineering technician">International Professional Engineering Technician</option>
+                    <option value="professional certificated engineer">Professional Certificated Engineer</option>
+                    <option value="professional engineer">Professional Engineer</option>
+                    <option value="professional engineering technician">Professional Engineering Technician</option>
+                    <option value="professional engineering technologist">Professional Engineering Technologist</option>
+                    <option value="registered civil technical laboratory controller">Registered Civil Technical Laboratory Controller</option>
+                    <option value="registered engineering technician">Registered Engineering Technician</option>
+                    <option value="registered fire protection system practitioner">Registered Fire Protection System Practitioner</option>
+                    <option value="registered lift inspector">Registered Lift Inspector</option>
+                    <option value="registered lift machinery inspector">Registered Lifting Machinery Inspector</option>
+                    <option value="registered medical equipment maintainer">Registered Medical Equipment Maintainer</option>
+                    <option value="technician-other">Technician-other</option></select>
+                </p>
+                <a href="#"><button class="sign-in-btn d-none d-lg-flex">Search</button></a>
+                <a
+                    href="#"
+                    style="
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        
+                        font-size: 30px;
+                        text-decoration: none;
+                    "
+                    >&times;</a>
+                
+              </div>
+            </div>
+        </div>
+
+      <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a>
           <li class="dropdown"><a href="about.html"><span>About Us</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -145,96 +211,6 @@
             <li><a href="OpportunitiesTenders.html">Tenders</a></li>
           </ul>
           </li>
-          <li><a href="https://engineeringcouncilsa.microsoftcrmportals.com/"><button class="btn sign-in-btn d-none d-lg-flex">ECSA Online Login</button></a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <!-- <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Home</a>
-          <li class="dropdown"><a href="about.html"><span>About Us</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="about.html">Mission & Vision</a></li>
-              <li><a href="corporateProfile.html">Corporate Profile</a></li>
-              <li><a href="History.html">History of ECSA</a></li>
-              <li><a href="Transformation.html">Transformation</a></li>
-              <li class="dropdown"><a href="#"><span>ECSA Resource Information</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="stat.html">Statutory Functions</a></li>
-                  <li><a href="#">ECSA Committee Structure</a></li>
-                  <li><a href="#">Access to Information</a></li>
-                  <li><a href="#">Strategic Plan</a></li>
-                  <li><a href="#">Quality Policy</a></li>
-                </ul>
-              </li>   
-            </ul>
-          </li>
-          <li class="dropdown"><a href="Regulation.html"><span>Regulation</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Legislation</a></li>
-                  <li><a href="#">Code of Conduct</a></li>
-                  <li><a href="#">Disciplinary Actions</a></li>
-                  <li><a href="#">Compliant Affidavit</a></li>
-                  <li><a href="#">Guideline Fees</a></li>
-                  <li class="dropdown"><a href="#"><span>Regulation Documents</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                      <li><a href="#">Complaints</a></li>
-                      <li><a href="#">Appeals</a></li>
-                      <li><a href="#">Method of Inquiry</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Advisory Notes</a></li>
-                  <li><a href="#">Decisions of Council</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="Register.html"><span>Register</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Why Register?</a></li>
-                  <li><a href="#">Registration Catergories</a></li>
-                  <li><a href="#">Registration Process</a></li>
-                  <li><a href="#">Apply for Registration</a></li>
-                  <li><a href="#">Registration Enquiry</a></li>
-                  <li><a href="#">Registration Documents</a></li>
-                  <li><a href="#">Who is Registered</a></li>
-                  <li><a href="#">New Candidate Applications</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="cpd.html"><span>Continuing<br>Professional<br>Development</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Rules on CPD</a></li>
-                  <li><a href="#">CPD Activities</a></li>
-                  <li><a href="#">CPD Forms</a></li>
-                  <li><a href="#">CPD - FAQ</a></li>
-                  <li><a href="#">Annual Fees</a></li>
-                  <li><a href="#">Update Details</a></li>
-                  <li><a href="#">ECSA CPD Licensed Bodies</a></li>
-                </ul>
-
-              </li>
-              <li class="dropdown"><a href="Publications.html"><span>Publications</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="services.html">News</a></li>
-              <li><a href="#">Speeches</a></li>
-              <li ><a href="services.html">Press Releases</i></a>
-              </li>
-              <li><a href="#">Bulletins</a>
-              </li>
-              <li><a href="#">Young Professionals</a></li>
-              <li><a href="#">ECSA Brochure</a></li>
-              <li><a href="#">Annual Reports</a></li>
-              <li><a href="#">Interview Videos</a></li>
-              <li><a href="#">Research Outputs</a> </li>
-            </ul>
-          </li>
-          <li><a href="RegulatoryInstruments.html">Regulatory<br>Instruments</a></li>
-          <li class="dropdown"><a href="Opportunities.html"><span>Opportunities</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul>
-            <li><a href="Opportunities.html">Bursaries</a></li>
-            <li><a href="OpportunitiesCareers">Careers</a></li>
-            <li><a href="OpportunitiesTenders.html">Tenders</a></li>
-          </ul>
-          </li>
-          <li><a href="https://engineeringcouncilsa.microsoftcrmportals.com/"><button class="btn sign-in-btn d-none d-lg-flex">ECSA Online Login</button></a></li>
         </ul>
       </nav><!-- .navbar -->
     </div>
