@@ -289,7 +289,9 @@ section {
   margin: 0;
 }
 
-
+ .wrapper {
+  padding-left: 0px;
+}
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
@@ -321,7 +323,7 @@ section {
 
   .navbar .sign-in-btn{
     padding-inline: 10px;
-    border-radius: 20pt;
+    border-radius: 15pt;
     background-color: var(--color-primary);
     color: #fff;
 }
@@ -1235,6 +1237,13 @@ section {
   border-radius: 0;
 }
 
+.services-cards .sign-in-btn{
+    padding-inline: 10px;
+    border-radius: 15pt;
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+  
 .services-cards .card-item .card-bg {
   min-height: 300px;
   background-size: cover;
