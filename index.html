@@ -61,14 +61,46 @@
   }
 </style>
 
+<style type="text/css" media="screen">
+     * {
+       margin: 0; 
+       padding: 0;
+     }
+
+     div#banner { 
+       position: absolute; 
+       top: 0; 
+       left: 0; 
+       background-color: red; 
+       width: 100%; 
+     }
+     div#banner-content { 
+       width: 800px; 
+       margin: 0 auto; 
+       padding: 10px; 
+       
+     }
+     div#main-content { 
+       padding-top: 70px;
+    }
+    </style>
+
+
 <body class="page-index">
+  
+  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
+    <div id="banner">
+    <div id="banner-content">
+    <marquee>EVENT | EVENT | EVENT | EVENT | EVENT</marquee>
+    </div>
+  </div>
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/MicrosoftTeams-image.png" alt="">
         <h1 class="d-flex align-items-center"></h1>
@@ -77,7 +109,10 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
+
+
       <div class="wrapper">
+        <br><br>
         <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" class="active">Home</a>
@@ -163,6 +198,7 @@
             <li><a href="OpportunitiesTenders.html">Tenders</a></li>
           </ul>
           </li>
+          <li><a href="#popup-box1"><i class="bi bi-search"></i></a></li>
         </ul>
       </nav><!-- .navbar -->
         <div align="left">
@@ -170,12 +206,38 @@
         <a href="https://www.ecsa.co.za/_forms/default.aspx?ReturnUrl=%2f_layouts%2fauthenticate.aspx%3fsource%3d%2fsitepages%2fCouncil%2520Member%2520Documents.aspx&source=/sitepages/Council%20Member%20Documents.aspx"><button class="btn sign-in-btn d-none d-lg-flex">Council Sign-in</button></a>
         <a href="https://engineeringcouncilsa.microsoftcrmportals.com/"><button class="btn sign-in-btn d-none d-lg-flex">ECSA Portal</button></a>
         <a href="#popup-box"><button id="show" class="btn sign-in-btn d-none d-lg-flex">Who is Registered</button></a>
+        
 
 
           
       </nav><!-- .navbar -->
     </div>
       
+      <div id="popup-box1" class="modal">
+        <div class="content">
+          <h1>
+            Search The Site
+          </h1>
+          <div align="center">
+            <br>
+            <input type="text" name="search" placeholder="Search">
+            <br><br>
+            <a href="#"><button class="sign-in-btn d-none d-lg-flex">Search</button></a>
+          </div>
+
+          <a
+                    href="#"
+                    style="
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        
+                        font-size: 30px;
+                        text-decoration: none;
+                    "
+                    >&times;</a>
+        </div>
+      </div>
         <div id="popup-box" class="modal">
             <div class="content">
                 <h1>
