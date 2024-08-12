@@ -153,6 +153,216 @@ section {
   position: relative;
 }
 
+/*--------------------------------------------------------------
+# Blog Sidebar
+--------------------------------------------------------------*/
+.icon-boxes .sidebar .sidebar-title {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.icon-boxes .sidebar .sidebar-item+.sidebar-item {
+  margin-top: 40px;
+}
+
+.icon-boxes .sidebar .search-form form {
+  background: #fff;
+  border: 1px solid rgba(27, 47, 69, 0.2);
+  padding: 3px 10px;
+  position: relative;
+}
+
+.icon-boxes .sidebar .search-form form input[type=text] {
+  border: 0;
+  padding: 4px;
+  border-radius: 4px;
+  width: calc(100% - 40px);
+}
+
+.icon-boxes .sidebar .search-form form input[type=text]:focus {
+  outline: none;
+}
+
+.icon-boxes .sidebar .search-form form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 15px;
+  margin: -1px;
+  background: var(--color-primary);
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  line-height: 0;
+}
+
+.icon-boxes .sidebar .search-form form button i {
+  line-height: 0;
+}
+
+.icon-boxes .sidebar .search-form form button:hover {
+  background: rgba(86, 184, 230, 0.8);
+}
+
+.icon-boxes .sidebar .categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.icon-boxes .sidebar .categories ul li+li {
+  padding-top: 10px;
+}
+
+.icon-boxes .sidebar .categories ul a {
+  color: var(--color-secondary);
+  font-size: 15px;
+}
+
+.icon-boxes .sidebar .categories ul a:hover {
+  color: var(--color-default);
+}
+
+.icon-boxes .sidebar .categories ul a span {
+  padding-left: 5px;
+  color: rgba(var(--color-default-rgb), 0.4);
+  font-size: 14px;
+}
+
+.icon-boxes .sidebar .recent-posts .post-item {
+  display: flex;
+  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.icon-boxes .sidebar .recent-posts .post-item+.post-item {
+  margin-top: 15px;
+}
+
+.icon-boxes .sidebar .recent-posts img {
+  width: 80px;
+  margin-right: 15px;
+}
+
+.icon-boxes .sidebar .recent-posts h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.icon-boxes .sidebar .recent-posts h4 a {
+  color: var(--color-secondary);
+  transition: 0.3s;
+}
+
+.icon-boxes .sidebar .recent-posts h4 a:hover {
+  color: var(--color-primary);
+}
+
+.icon-boxes .sidebar .recent-posts time {
+  display: block;
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(var(--color-default-rgb), 0.4);
+}
+
+.icon-boxes .sidebar .tags {
+  margin-bottom: -10px;
+}
+
+.icon-boxes .sidebar .tags ul {
+  list-style: none;
+  padding: 0;
+}
+
+.icon-boxes .sidebar .tags ul li {
+  display: inline-block;
+}
+
+.icon-boxes .sidebar .tags ul a {
+  color: #38618e;
+  font-size: 14px;
+  padding: 6px 14px;
+  margin: 0 6px 8px 0;
+  border: 1px solid rgba(27, 47, 69, 0.15);
+  display: inline-block;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.icon-boxes .sidebar .tags ul a:hover {
+  color: #fff;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+}
+
+.icon-boxes .sidebar .tags ul a span {
+  padding-left: 5px;
+  color: rgba(27, 47, 69, 0.8);
+  font-size: 14px;
+}
+/*--------------------------------------------------------------
+# Icon Boxes
+--------------------------------------------------------------*/
+.icon-boxes2 {
+  padding-top: 0;
+  position: relative;
+  z-index: 100;
+  background-color: white;
+}
+
+.icon-boxes2 .icon-box {
+  padding: 40px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.icon-boxes2 .icon {
+  margin: 0 auto 20px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.icon-boxes2 .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #f6b024;
+}
+
+.icon-boxes2 .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.icon-boxes2 .title a {
+  color: #05579e;
+}
+
+.icon-boxes2 .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #777777;
+}
+
+.icon-boxes2 .sidebar .search-form{
+  background: #fff;
+  border: 1px solid rgba(27, 47, 69, 0.2);
+  padding: 3px 10px;
+  position: relative;
+}
+
+
 
 /*--------------------------------------------------------------
 # Icon Boxes
@@ -1153,6 +1363,7 @@ color: #2D4FA2;
   top: -3px;
   color: var(--color-primary);
 }
+
 
 /*--------------------------------------------------------------
 # Services List Section
@@ -2279,14 +2490,18 @@ color: #2D4FA2;
 /*--------------------------------------------------------------
 # Blog Home Posts List
 --------------------------------------------------------------*/
+.blog{
+   height: 220px;
+}
+
 .blog .posts-list article {
-  height: 100%;
+   height: 220px;
   border-bottom: 1px solid #d6e2ef;
   padding-bottom: 30px;
 }
 
 .blog .posts-list article+article {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .blog .posts-list .post-img {
@@ -2380,7 +2595,13 @@ color: #2D4FA2;
 }
 
 .blog .blog-details .content {
+  height: 220px;
+  background-color: black;
   margin-top: 20px;
+  top: -180px;
+  width: 2000px;
+  left: -70px;
+  
 }
 
 .blog .blog-details .content h3 {
@@ -2390,6 +2611,9 @@ color: #2D4FA2;
 }
 
 .blog .blog-details .content blockquote {
+  height: 220px;
+  width: 1520px;
+  left: 10px;
   overflow: hidden;
   background-color: rgba(27, 47, 69, 0.06);
   padding: 60px;
@@ -2404,7 +2628,7 @@ color: #2D4FA2;
   margin-bottom: 0;
   font-style: italic;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .blog .blog-details .content blockquote:after {
