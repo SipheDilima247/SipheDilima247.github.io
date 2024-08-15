@@ -3333,5 +3333,43 @@ color: #2D4FA2;
   }
 }
 
+/* Group 1000001768 */
+.Group{
+
+position: absolute;
+width: 1439px;
+height: 660.61px;
+left: 0px;
+top: 3477px;
+
+}
+
+/* Rectangle 3840 */
+.Rectangle{
+position: absolute;
+width: 1439px;
+height: 583px;
+left: 0px;
+top: 3477px;
+
+background: #F7F7F7;
+border-radius: 10px;
+}
+
+
+/* letter_send 1 1 */
+.Rectangle .letter{
+position: absolute;
+width: 266px;
+height: 217px;
+left: 1027px;
+top: 3926.73px;
+}
+
+.Rectangle1{
+background: url(letter_send 1.png);
+transform: rotate(-13.64deg);
+}
+
 #more {display:none;}
 
