@@ -245,7 +245,7 @@
 
       
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar" style="color: #1B2546">
         <ul>
           <li><a href="index.html">Home</a>
           <li><a href="about.html">About Us</a>
@@ -258,7 +258,7 @@
                 </li>
               </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Regulation</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+         <!--<li class="dropdown"><a href="#"><span>Regulation</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                   <li class="dropdown"><a href="#"><span>Enforcement</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
@@ -287,7 +287,7 @@
                     </ul>
                   </li>
                 </ul>
-              </li>
+              </li>-->
               <li class="dropdown"><a class="nav-link scrollto active" href="#"><span>Registration</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                   <li><a href="#">Become a Member</a></li>
@@ -504,11 +504,12 @@
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
+              <a href="Register.html#Candidate">
               <div class="member-img">
                 <img src="assets/img/Website/graduate.png" class="img-fluid" alt="">
               </div>
               <div style="background-color: white; height: 5px;"></div>
-              <a href="Register.html#Candidate"><div class="member-info" style="background-color: #697897; height: 70px;">
+              <div class="member-info" style="background-color: #697897; height: 70px;">
                 <h4  style="color: white;">Candidate Category</h4><br>
               </div></a>
             </div>
@@ -516,11 +517,12 @@
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
+              <a href="Register.html#Professional">
               <div class="member-img">
                 <img src="assets/img/Website/building.png" class="img-fluid" alt="">
               </div>
               <div style="background-color: white; height: 5px;"></div>
-              <a href="Register.html#Professional"><div class="member-info" style="background-color: #6697C6">
+              <div class="member-info" style="background-color: #6697C6">
                 <h4 style="color: white;">Professional Category</h4><br>
                 
               </div></a>
@@ -529,11 +531,12 @@
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
+              <a href="Register2.html#Specified">
               <div class="member-img">
                 <img src="assets/img/Website/gears.png" class="img-fluid" alt="">
               </div>
               <div style="background-color: white; height: 7px;"></div>
-              <a href="Register2.html#Specified"><div class="member-info" style="background-color: #98A3B7">
+              <div class="member-info" style="background-color: #98A3B7">
                 <h4 style="color: white;">Specified Category</h4><br>
               </div></a>
             </div>
@@ -541,11 +544,12 @@
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
+              <a href="Register3.html#International">
               <div class="member-img">
                 <img src="assets/img/Website/web.png" class="img-fluid" alt="">
               </div>
                <div style="background-color: white; height: 7px;"></div>
-              <a href="Register3.html#International"><div class="member-info" style="background-color: #697897; height: 72px">
+              <div class="member-info" style="background-color: #697897; height: 72px">
                 <h4 style="color: white;">International Recognition</h4>
               </div></a>
             </div>
@@ -564,17 +568,39 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+
+  <style>
+    .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .input-icons i {
+            position: absolute;
+        }
+
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+        }
+  </style>
+  <footer id="footer" class="footer" style="height: 150px;">
 
     <div class="footer-content">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <div class="social-links d-flex  mt-3">
-              <a href="https://twitter.com/ECSAOfficial" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="https://www.facebook.com/profile.php?id=100040814995744" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/ecsa.official/" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://za.linkedin.com/company/engineering-council-of-south-africa" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/ECSAOfficial" class="twitter"><i style="color: #1B2546" class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100040814995744" class="facebook"><i style="color: #1B2546" class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ecsa.official/" class="instagram"><i style="color: #1B2546" class="bi bi-instagram"></i></a>
+              <a href="https://za.linkedin.com/company/engineering-council-of-south-africa" class="linkedin"><i style="color: #1B2546" class="bi bi-linkedin"></i></a>
             </div>
 
             <br><Br><Br>
@@ -585,24 +611,25 @@
 
           <div class="col-lg-2 col-6 footer-links">
 
-            <form action="" class="mt-3"> 
-              <input type="text" placeholder="Search">
-                <button class="search">
-                <i class="bi bi-search"></i>
-                </button><br>
+            <form action="" class="mt-3">
+              <div class="input-icons">
+              <i class="bi bi-search" style="height: 35px"></i>
+              <input style="height: 37px; width: 375px; border: white; text-align:left;" class="input-field" type="text" placeholder="    Search">
+            </div>
+                <br>
             </form>
-            <br><br><Br><br>
-            <h4>Vuvuzela Hotline</h4>
+            <br>
+            <h4 style="font-size: 20px;">Vuvuzela Hotline</h4>
             <ul>
-              <li><i class="bi bi-phone"></i> <a href="#"><u> 0806227767</u></a></li>
+              <li><i class="fa fa-phone"></i> <a href="#"><u> 0806227767</u></a></li>
               <li><i class="bi bi-envelope"></i> <a href="mailto:ecsa@thehotline.co.za"> ecsa@thehotline.co.za</a></li>
               <li><i class="bi bi-globe"></i> <a href="www.thehotline.co.za"><u> www.thehotline.co.za</u></a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <br><br><br><br><br><br>
-            <h4>Quick Links</h4>
+            <br><br><br><br><Br>
+            <h4 style="font-size: 20px;">Quick Links</h4>
             <ul>
               <li><a href="">Frequently Asked Questions</a></li>
               <li><a href="">Complaints of Misconduct</a></li>
@@ -612,12 +639,12 @@
           </div>
 
           <div class="col-lg-3 col-md-12 footer-links">
-            <br><br><br><br><br><br>
-            <h4>Contact Us</h4>
+            <br><br><br><br><br>
+            <h4 style="font-size: 20px;">Contact Us</h4>
             <ul>
               <li><i class="bi bi-phone"></i> <a href="#"><u> 011 607 9500</u></a></li>
               <li><i class="bi bi-envelope"></i> <a href="mailto:engineer@ecsa.co.za"> engineer@ecsa.co.za</a></li>
-              <li><i class="bi bi-geo-alt"></i> 1st Floor, Waterview Corner Building<br>2 Ernest Oppenheimer Avenue,<br>Bruma</li>
+              <li><i class="bi bi-geo-alt"></i> <a href="">1st Floor, Waterview Corner Building<br>2 Ernest Oppenheimer Avenue,<br>Bruma</a></li>
             </ul>
 
           </div>

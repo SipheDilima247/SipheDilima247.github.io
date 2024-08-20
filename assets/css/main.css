@@ -12,7 +12,7 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system,"Gill Sans", sans-serif;, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system,"Gill Sans", sans-serif;
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Raleway", sans-serif;
 }
@@ -101,6 +101,7 @@ section {
 # Icon Boxes
 --------------------------------------------------------------*/
 .icon-boxes {
+  font: var(--font-default);
   padding-top: 0;
   position: relative;
   z-index: 100;
@@ -1253,6 +1254,7 @@ color: #2D4FA2;
 
 .why-us .img-bg {
   min-height: 500px;
+  height: 10px;
   width: 250px;
   background-size: cover;
   color: white;
@@ -3134,13 +3136,13 @@ color: #2D4FA2;
   display: inline-block;
   width: 32px;
   height: 32px;
-  color: rgba(27, 47, 69, 0.5);
+  color: #f7f9fc;
   margin-right: 10px;
   transition: 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-primary);
+  background-color: ;
   color: #fff;
   border-radius: 50px;
 }
