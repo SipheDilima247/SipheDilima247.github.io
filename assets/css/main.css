@@ -765,6 +765,7 @@ color: #2D4FA2;
   display: flex;
   list-style: none;
   align-items: center;
+  font-weight: bold;
 }
 }
 
@@ -975,6 +976,7 @@ color: #2D4FA2;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    font-weight: bold;
   }
 
   .navbar a,
