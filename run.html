@@ -1,0 +1,11 @@
+<button class="color-toggle">Click me!</button>
+<div class="color-toggle">Click me!</div>
+<p class="color-toggle">Click me!</p>
+
+<script type="text/javascript">const elements = document.querySelectorAll('.color-toggle');
+
+elements.forEach(element => {
+  element.addEventListener('click', () => {
+    element.style.backgroundColor = element.style.backgroundColor === 'red' ? 'blue' : 'red';
+  });
+});</script>
