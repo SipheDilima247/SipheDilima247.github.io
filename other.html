@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ECSA | Improper Conduct</title>
+  <title>ECSA | Latest News</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,6 +27,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/5efac7f1a9.js" crossorigin="anonymous"></script>
 
+
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -38,15 +39,35 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
 <style>
   .search{
     background-color: #04a1d5;
   }
 </style>
 
-<body class="page-about">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<body class="page-blog">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
@@ -56,11 +77,11 @@
       </div>
       <div class="contact-info d-flex align-items-center">
         <div class="social-links mt-3 d-flex  align-items-center  ">
-              <a href="https://twitter.com/ECSAOfficial" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="https://web.facebook.com/people/Engineering-Council-Of-South-Africa-ECSA/100040814995744/" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/ecsa.official/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
-              <a href="https://za.linkedin.com/company/engineering-council-of-south-africa" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
         <!-- <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
         <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55 -->
@@ -132,10 +153,9 @@
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
       <!-- <h1 class="logo"><a href="index.html">Anyar</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/ECSA LOGO-01.png" ></a>
+      <a href="index.html" class="logo"><img src="assets/img/ECSA LOGO-01.png" alt=""></a>
 
       <div class="contact-info d-flex align-items-center">
         <!-- <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
@@ -252,18 +272,22 @@
 
       
 
-      <nav id="navbar" class="navbar" style="color: #1B2546;">
+      <nav id="navbar" class="navbar" style="color: #1B2546">
         <ul>
-          <li><a href="#hero"><b>Home</b></a>
-          <li><a href="about.html"><b>About Us</b></a></li>
-          <li class="dropdown"><a href="Accreditation.html"><span><b>Accreditation &<br>Training Academies</b></span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="index.html">Home</a>
+          <li><a href="about.html">About Us</a>
+            
+          </li>
+          <li class="dropdown"><a href="Accreditation.html"><span>Accreditation &<br>Training Academies</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
-                <li class="dropdown"><a href="InternationalRecognition.html">International Recognition</a></li>
+                <li><a href="InternationalRecognition.html">International Recognition</a></li>
                 <li><a href="EvaluationOfQualification.html">Education Evaluation</a></li>
-                <li><a href="Training.html">Training Academies</a></li>
+                <li><a href="Training.html">Training Academies</a>
+                    
+                </li>
               </ul>
           </li>
-          <li class="dropdown"><a class="nav-link scrollto active" href="Regulation.html"><span> Improper Conduct &<br>Enforcement</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="Regulation.html"><span> Improper Conduct &<br>Enforcement</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                   <li class="dropdown"><a href="#"><span>Improper Conduct</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
@@ -272,60 +296,58 @@
                         <ul>
                           <li><a href="professionalPractice.html#conduct">Code of Conduct</a></li>
                           <li><a href="professionalPractice.html#Overarching">Overarching Code of Practice</a></li>
-                          <li><a href="professionalPractice.html#Codes-of-Practice">Codes of Practice</a></li>
-                          <li class="dropdown"><a href="Decisions.html" target="_blank"><span>Decisions of Council</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                          <li><a href="professionalPractice.html">Codes of Practice</a></li>
+                          <li class="dropdown"><a href="Decision.html" target="_blank"><span>Decisions of Council</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
                             <ul>
                               <li><a href="gaz.html" target="_blank">Gazettes</a></li>
                             </ul></li>
-                            <li><a href="Advisory.html">Advisory Notes & Useful Links</a></li>
+
+                          <li><a href="Advisory.html">Advisory Notes & Useful Links</a></li>
                           
                         </ul>
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown"><a href="#"><span>Improper Conduct</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                      <li><a href="#">Lodge a Complaint</a></li>
-                      <li><a href="#">Rules concerning the management of Improper Conduct</a></li>
-                      <li><a href="#">Service Charter and standard Operating Procedure (Still in progress)</a></li>
-                      <li><a href="#">Code of Conduct</a></li>
-                      <li><a href="#">Overarching Code of Practise</a></li>
-                      <li><a href="#">Codes of Practice</a></li>
-                      <li><a href="#">Decisions of Council</a></li>
-                      <li><a href="#">Gazettes</a></li>
-                      <li><a href="#">Advisory Notes and Useful Links</a></li>
-                    </ul>
-                  </li>
+                  
                   <li class="dropdown"><a href="#"><span>Appeals</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
-                      <li><a href="#">Lodge an Appeal</a></li>
-                      <li><a href="#">Rules concerning the management of appeals</a></li>
-                      <li><a href="#">Service Charter and Standard Operating Procedure (Still in Progress)</a></li>
+                      <li><a href="Appeal.html">Lodge an Appeal</a></li>
+                      <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/Appeal_Procedure_Document.pdf" target="_blank">Rules concerning the management of appeals</a></li>
+                      
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="#"><span><b>Registration</b></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href="#"><span>Registration</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                   <li><a href="Member.html">Become a Member</a></li>
-                  <li><a href="categories.html">Registration Categories & Benefits</a></li>
+                  <li><a href="categories.html">Registration Catergories & Benefits</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="cpd.html"><span><b>Continuing<br>Professional<br>Development</b></span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href="cpd.html"><span>Continuing<br>Professional<br>Development</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="cpdActivities.html">CPD Activities</a></li>
+                  <li><a href="cpdActivities.html">CPD Activities</a>
+                    
+                  </li>
                 </ul>
 
               </li>
-              <li><a href="Publications.html"><b>Publications</b></a></li>
-          <li class="dropdown"><a class="nav-link scrollto" href="#"><b>Regulatory Instruments</b><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="Publications.html"></a>
+            
+          </li>
+          <li class="dropdown"><a class="nav-link scrollto" href="#">Regulatory Instruments<i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="education.html">Education & Training Academies</a></li>
+              <li><a href="education.html">Education & Training Academies</a>
+                
+              </li>
 
-              <li><a href="regcpd.html">Registration and Continuing<br>Professional Development</a></li>
-                <li><a href="professionalPractice.html">Professional Practice</a></li>
+              <li><a href="regcpd.html">Registration and Continuing<br>Professional Development</a>
+                </li>
+                <li><a href="professionalPractice.html">Professional Practice</a>
+                  
+                </li>
             </ul></li>
-          <li class="dropdown"><a href="#"><span><b>Opportunities</b></span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#"><span>Opportunities</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
             <li><a href="OpportunitiesCareers.html">Careers</a></li>
             <li><a href="OpportunitiesTenders.html">Tenders</a></li>
@@ -365,7 +387,7 @@
         <div id="popup-box" class="modal">
             <div class="content">
                 <h1>
-                    Search For Registered Persons
+                    Search For Registered Candidates
                 </h1>
                 <br>
                 <div align="center">
@@ -427,241 +449,175 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/STEMWOMEN.jpg');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/blog-header.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>Improper Conduct</h2>
+        <h2>OTHER STAKEHOLDERS</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Improper Conduct</li>
+          <li>Latest News</li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-posts" class="recent-posts">
+    <!-- ======= Blog Details Section ======= -->
+    <section id="blog" class="blog" style=" height:   1000px;">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Advisory Notes & Useful Links</h2>
+        <div class="row g-5">
 
-        </div>
-        <br>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="content">
-          <p>From time to time ECSA publishes Advisory Notes and Alerts on engineering-related  matters.  These are informative documents and do not replace ECSA approved policies, standards and procedures.  While every effort to ensure the correctness of the information provided in these Advisory Notes, the onus rests on readers to ensure that the provisions of legislation applicable to engineering work and services are complied.<br><br>
-          The following Advisory Notes are published:</p>
-          <ul>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/Advisory%20Note%20on%20Improper%20Conduct.pdf" target="_blank">Advisory Note on Improper Conduct</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/220217_Failure_of_CRB_Walls_South_Africa.pdf" target="_blank">The failure of concrete retaining block (CRB) walls in South Africa</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/080416_Error_vs_Improper_Conduct.pdf" target="_blank">Error versus Improper Conduct(April 2016)</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/080416_Consequences_of_failed_retaining_wall.pdf" target="_blank">Consequences of a failed retaining wall next to a stream(April 2016)</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/200415_Deficient_design_of_Foundations.pdf" target="_blank">Inadequate attention to foundation design and construction of a house (March 2015)</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/200415_Inadequate_Roof_Structure_Design_Repair.pdf" target="_blank">Inadequate assessment of timber roof structure, followed by unacceptable remedial work (March 2015)</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/050315_Prac_Note_Failure_of_Concrete_Raft.pdf" target="_blank">The results of a failed Concrete Raft foundation (February 2015)</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/060215_Practice_Note_Earthquake_Resistant_Structure.pdf" target="_blank">The importance of taking seismic loading on a building structure fully into account (January 2015)</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/290312_Advisory_Note_IDoEW_Regs.pdf" target="_blank">Advisability and Legal Requirements for Employing Registered Professionals to Perform Engineering Services (March 2012)</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/030512AdvNt_Role_Respons_Conduct.pdf" target="_blank">The Role, Responsibilities and Conduct of Persons Registered with ECSA Appointed for Small Building Works (March 2012)</a></li>
-            <li><a href="https://www.ecsa.co.za/regulation/RegulationDocs/030512_DISCIPLINARY_PROCEDURE_NOTE.pdf" target="_blank">A Guide to ECSA’s Disciplinary Procedures  (March 2012)</a></li>
-          </ul>
-        </div>
+            <article class="blog-details">
 
-      </div>
-    </section><!-- End Recent Blog Posts Section -->
+              
 
-    
+              <h2 class="title">GOVERNMENT DEPARTMENTS</h2>
 
-    <!-- ======= Why Choose Us Section =======
-    <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
+              
 
-        <div class="section-header">
-          <h2>Who We Are</h2>
+              <div class="content" style="background-color:   white ; width: 1400px;">
+                
+                <table>
+                  <tr>
+                    <td>HEQC</td>
+                    <td>Council for Higher Education</td>
+                  </tr>
+                  <tr>
+                    <td>Tel:</td>
+                    <td>(012) 392 9100</td>
+                  </tr>
+                  
+                  
+                  <tr>
+                    <td>Website:</td>
+                    <td><a href="http://www.che.ac.za/" target="_blank">http://www.che.ac.za/</a></td>
+                  </tr>
+                </table><br><br>
 
-        </div>
+                <table>
+                  <tr>
+                    <td></td>
+                    <td>Department of Public Works</td>
+                  </tr>
+                  <tr>
+                    <td>Tel:</td>
+                    <td>(012) 337 2000</td>
+                  </tr>
+                  <tr>
+                    <td>Fax:</td>
+                    <td>(012) 328 4217</td>
+                  </tr>
 
-        <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+                  <tr>
+                    <td>E-mail:</td>
+                    <td><a href="mailto:lucky.mochalibane@dpw.gov.za">lucky.mochalibane@dpw.gov.za</a></td>
+                  </tr>
+                  
+                  
+                  <tr>
+                      <td>Website:</td>
+                      <td><a href="http://www.publicworks.gov.za" target="_blank">http://www.publicworks.gov.za</a></td>
+                  </tr>
+                </table><br><br>  
 
-          <div class="col-xl-5 img-bg" style="background-image: url('assets/img/AdobeStock_523342853.jpeg')"></div>
-          <div class="col-xl-7 slides  position-relative">
+                <table>
+                  <tr>
+                    <td>IDT</td>
+                    <td>Independent Development Trust</td>
+                  </tr>
+                  <tr>
+                    <td>Tel:</td>
+                    <td>(012) 368 2840</td>
+                  </tr>
+                  <tr>
+                    <td>Fax:</td>
+                    <td>(012) 368 2828</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Website:</td>
+                    <td><a href="http://www.idt.org.za/" target="_blank">http://www.idt.org.za/</a></td>
+                  </tr>
+                </table><br><br>
 
-            <div class="slides-1 swiper">
-              <div class="swiper-wrapper">
+                <table>
+                  <tr>
+                    <td>NSTF</td>
+                    <td>National Science & Technology Forum</td>
+                  </tr>
+                  <tr>
+                    <td>Tel:</td>
+                    <td>(012) 841 3987</td>
+                  </tr>
+                  <tr>
+                    <td>Fax:</td>
+                    <td>(012) 841 3025</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Website:</td>
+                    <td><a href="http://www.nstf.org.za/" target="_blank">http://www.nstf.org.za/</a></td>
+                  </tr>
+                </table><br><br>
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Our Vision</h3>
-                    <h4 class="mb-3">What do we envision for the future?</h4>
-                    <p>An effective regulator assuring engineering excellence.</p>
-                  </div>
-                </div><!-- End slide item
+                <table>
+                  <tr>
+                    <td>SAHRA</td>
+                    <td>South African Heritage Resources</td>
+                  </tr>
+                  <tr>
+                    <td>Tel:</td>
+                    <td>(011) 403 2460</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Website:</td>
+                    <td><a href="http://www.sahra.org.za/" target="_blank">http://www.sahra.org.za/</a></td>
+                  </tr>
+                </table><br><br>
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Our Mission</h3>
-                    <h4 class="mb-3">We are confident that we will achieve our vision.</h4>
-                    <p>Determining engineering standards for education, accreditation and registration.</p>
-                    <p>Registration of Engineering practitioners.</p>
-                    <p>Developing  and  sustaining  a  relevant,  transformed,  competent  and  internationally recognized engineering profession as well as practice standards.</p>
-                    <p>Enforcing compliance with education, training, registration, continuing education and professional practice standards.</p>
-                    <p>Maintaining a competent workforce, efficient and adequate governance structures and systems.</p>
-                    <p>Educating the public on expected engineering quality standards and protecting the interests of the public against sub-standard quality of engineering work.</p>
-                    <p>Regulatory efforts to ensure environmental protectio.</p>
-                    <p>Engaging with Government to support national priorities including transformation of the engineering profession.</p>
-                    <p>Instituting collaborative efforts with ECSA stakeholders with a view to enhancing ECSA offerings.</p>
-                  </div>
-                </div><!-- End slide item
+                <table>
+                  <tr>
+                    <td>SAQA</td>
+                    <td>South African Qualification Authority</td>
+                  </tr>
+                  <tr>
+                    <td>Tel:</td>
+                    <td>(012) 431 5144</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Website:</td>
+                    <td><a href="http://www.saqa.org.za/">http://www.saqa.org.za/</a></td>
+                  </tr>
+                </table><br><br>
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Our Values</h3>
-                    <h4 class="mb-3">Our core values embody what we stand for in ECSA.</h4>
-                    <p>Professional: Conduct beyond reproach to the highest ethical standards underpinned by integrity, quality, timeliness, trust and respect.</p>
-                    <p>Accountable: Doing what we commit to do in an environment of trust and respect and being answerable for our failures to meet our committed obligations.</p>
-                    <p>Collaborative: Working as a team to achieve exceptional results.</p>
-                    <p>Transparent: Honest and open communication and sharing of information between stakeholders.</p>
-                    <p>Innovation: utilizing creative energies in collaboration with ECSA stakeholders to identify improved, enhanced and more cost-efficient engineering practice solutions.</p>
-                  </div>
-                </div><!-- End slide item
+                
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Corporate Profile</h3>
-                    <p>View the corporate identities.</p>
-                    <a href="corporateProfile.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div><!-- End slide item
+                
+              </div><!-- End post content -->
 
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">History of ECSA</h3>
-                    <p>It is a pleasure to be able to write an introduction to this two-part history of registration of the engineering profession, having been involved one way or another with this "struggle" since my school days: my father "M M" and older brother Kobus were active in the promotion of registration from the 1940’s onwards, so that I was indoctrinated and became a follower of the cause even before my engineering studies started.</p>
-                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div><!-- End slide item
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Transformation</h3>
-                    <p>The Engineering Council of South Africa (ECSA) has embarked on a journey of transformation in order to ensure maximum efficiency in the delivery of its core mandate, and consequently improve its service to the engineering profession and the public at large.</p>
-                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div><!-- End slide item
+            </article><!-- End blog post -->
 
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
           </div>
 
+          
         </div>
 
       </div>
-    </section> End Why Choose Us Section -->
-
-    <!-- ======= Call To Action Section =======
-    <section id="call-to-action" class="call-to-action">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h3>Aspiring Engineer?</h3>
-            <p>Learn more about how you can register as an engineering candidate and be nationally recognized by our statutory body in terms of the EPA.</p>
-            <a class="cta-btn" href="#">Register Now</a>
-          </div>
-        </div>
-
-      </div>
-    </section> End Call To Action Section -->
-
-    <!-- ======= Team Section =======
-    <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Our Team</h2>
-
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div><!-- End Team Member 
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div><!-- End Team Member 
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div><!-- End Team Member 
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div><!-- End Team Member
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
+    </section><!-- End Blog Details Section -->
+    <section class="services-cards" style="background-color: white;">
+      <div style="width:800px; margin:0 auto;">
+                      <div style="display: flex;">
+                      
+                      <button style="background-color: gray;" class="btn sign-in-btn d-none d-lg-flex">Previous</button>
+                      
+                      <a href="other2.html"><button class="btn sign-in-btn d-none d-lg-flex" style="b">Next</button></a>
+                    </div>
+                    </div>
+    </section>
 
   </main><!-- End #main -->
 
