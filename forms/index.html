@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Form</title>
+    <!-- Form styling -->
+    <link rel="stylesheet" href="formcarry-form.css" />
+  </head>
+
+  <style type="text/css">
+    .formcarry-container * {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+
+  /* colors */
+  --color-blue: #2552d0;
+  --color-light-blue: #3266e3;
+  --color-gray: #e5e7eb;
+  --color-dark-gray: #9da3ae;
+  --color-pink: #edadd2;
+}
+
+.formcarry-container {
+  /* container */
+  --c-width: 50%;
+  --c-max-width: 500px;
+
+  width: var(--c-width);
+  max-width: var(--c-max-width);
+  display: block;
+  margin: 10vh auto 0 auto;
+}
+
+.formcarry-form label {
+  display: block;
+  padding: 12px 0 2px 0;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.formcarry-form input,
+.formcarry-form textarea {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-gray);
+  border: none;
+  border: 4px solid var(--color-gray);
+  outline: none;
+  border-radius: 8px;
+  color: var(--color-dark-gray);
+}
+
+.formcarry-form input:focus,
+.formcarry-form textarea:focus {
+  background-color: #fff;
+  color: var(--color-dark-gray);
+}
+
+.formcarry-form input:focus:required:invalid {
+  border-color: var(--color-pink);
+  background-color: #fff;
+}
+
+.formcarry-form button {
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: var(--color-blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+
+  transition: 300ms all;
+}
+
+.formcarry-form button:hover {
+  background-color: var(--color-light-blue);
+}
+
+.formcarry-alert {
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 12px;
+  display: none;
+}
+
+.formcarry-alert.visible {
+  display: block;
+}
+
+.formcarry-alert.success {
+  background: #69cf9d;
+}
+
+.formcarry-alert.error {
+  background: #de524c;
+}
+  </style>
+  <body>
+    <div class="formcarry-container">
+      <form action="#" method="POST" class="formcarry-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="fullName" required />
+
+        <label for="email">Your Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
