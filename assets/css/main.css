@@ -584,9 +584,9 @@ section {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  height: 60px;
+  height: auto;
   padding: 0;
-  font-size: 14px;
+  font-size: 87.5%;
   transition: all 0.5s;
   overflow: hidden;
   background-color: #1b2f45;
@@ -594,7 +594,7 @@ section {
 }
 
 #topbar.topbar-scrolled {
-  top: -60px;
+  top: -375%;
 }
 
 #topbar .contact-info a {
@@ -610,26 +610,26 @@ section {
 #topbar .contact-info i {
   color: #f6b024;
   line-height: 0;
-  margin-right: 5px;
+  margin-right: 31.25%;
 }
 
 #topbar .contact-info .phone-icon {
-  margin-left: 15px;
+  margin-left: 93.75%;
 }
 
 #topbar .social-links a {
-  font-size: 16px;
+  font-size: 100%;
   display: inline-block;
   background: #1b2f45;
   color: rgba(255, 255, 255, 255);
   line-height: 1;
   padding: 10px 0;
-  margin-right: 4px;
+  margin-right: 25%;
   border-radius: 50%;
   align-items: center;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 225%;
+  height: auto;
   transition: 0.3s;
 }
 
@@ -642,7 +642,7 @@ section {
 #topbar .social-links i {
   color: rgba(255, 255, 255, 255);
   line-height: 0;
-  margin-right: 5px;
+  margin-right: 31.25%;
 
 }
 
@@ -653,10 +653,10 @@ section {
 #topbar .cta a {
   color: rgba(255, 255, 255, 255);
   background: #f6b024;
-  padding: 6px 24px 8px 24px;
+  padding: 37.5% 150% 50% 150%;
   display: inline-block;
   transition: 0.3s;
-  border-radius: 50px;
+  border-radius: 312.5%;
 }
 
 #topbar .cta a:hover {
@@ -772,8 +772,8 @@ color: #2D4FA2;
 .navbar form{
     backdrop-filter: blur(5px);
     position: absolute;
-    top: 250px;
-    size: 500px;
+    top: 1562.5%;
+    size: 3125%;
 }
 
 .navbar li {
@@ -791,8 +791,8 @@ color: #2D4FA2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3px;
-  font-size: 14px;
+  padding: 0 18.75%;
+  font-size: 87.5%;
   color: #1b2f45;
   white-space: nowrap;
   transition: 0.3s;
@@ -801,21 +801,21 @@ color: #2D4FA2;
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 75%;
   line-height: 0;
-  margin-left: 5px;
+  margin-left: 31.25%;
 }
 
 .navbar>ul>li>a:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
-  bottom: -5px;
+  height: 12.5%;
+  bottom: -31.25%;
   left: 0;
   background-color: #f6b024;
   visibility: hidden;
-  width: 0px;
+  width: 0%;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -836,8 +836,8 @@ color: #2D4FA2;
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
+  left: 87.5%;
+  top: calc(100% + 187.5%);
   margin: 0;
   padding: 10px 0;
   z-index: 99;
@@ -850,12 +850,12 @@ color: #2D4FA2;
 }
 
 .navbar .dropdown ul li {
-  min-width: 200px;
+  min-width: 1250%;
 }
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 87.5%;
   font-weight: 500;
   text-transform: none;
   color: white;
@@ -879,7 +879,7 @@ color: #2D4FA2;
 
 .navbar .dropdown .dropdown ul {
   top: 0;
-  left: calc(100% - 30px);
+  left: calc(100% - 187.5%);
   visibility: hidden;
 }
 
@@ -890,7 +890,7 @@ color: #2D4FA2;
   visibility: visible;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 8537.5%) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
