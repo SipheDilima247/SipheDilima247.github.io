@@ -610,25 +610,25 @@ section {
 #topbar .contact-info i {
   color: #f6b024;
   line-height: 0;
-  margin-right: 5px;
+  margin-right: 31.25%;
 }
 
 #topbar .contact-info .phone-icon {
-  margin-left: 15px;
+  margin-left: 93.75%;
 }
 
 #topbar .social-links a {
-  font-size: 16px;
+  font-size: 100%;
   display: inline-block;
   background: #1b2f45;
   color: rgba(255, 255, 255, 255);
   line-height: 1;
   padding: 10px 0;
-  margin-right: 4px;
+  margin-right: 0.4vh;
   border-radius: 50%;
   align-items: center;
   text-align: center;
-  width: 36px;
+  width: 3.6vh;
   height: auto;
   transition: 0.3s;
 }
