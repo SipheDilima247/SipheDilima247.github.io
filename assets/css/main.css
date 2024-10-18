@@ -1155,7 +1155,7 @@ color: #2D4FA2;
   text-decoration: none;
 }
 
-@media (min-width: 6400%) {
+@media (min-width: 1024px) {
   #hero p {
     width: 60%;
   }
