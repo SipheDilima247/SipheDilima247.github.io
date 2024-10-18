@@ -584,9 +584,9 @@ section {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  height: 60px;
+  height: auto;
   padding: 0;
-  font-size: 14px;
+  font-size: 87.5%;
   transition: all 0.5s;
   overflow: hidden;
   background-color: #1b2f45;
@@ -594,7 +594,7 @@ section {
 }
 
 #topbar.topbar-scrolled {
-  top: -60px;
+  top: -375%;
 }
 
 #topbar .contact-info a {
@@ -629,7 +629,7 @@ section {
   align-items: center;
   text-align: center;
   width: 36px;
-  height: 36px;
+  height: auto;
   transition: 0.3s;
 }
 
@@ -679,7 +679,7 @@ section {
 
 position: absolute;
 width: 1440px;
-height: 406px;
+height: auto;
 left: calc(50% - 1440px/2);
 top: 412px;
 
