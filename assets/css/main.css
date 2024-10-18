@@ -1902,7 +1902,7 @@ color: #2D4FA2;
 }
 
 .recent-posts .sign-in-btn{
-    padding-inline: 30px;
+    padding-inline: 187.5%;
     border-radius: 10pt;
     background-color: var(--color-primary);
     color: #fff;
@@ -1931,14 +1931,14 @@ color: #2D4FA2;
 }
 
 .recent-posts .post-box .meta .post-author {
-  font-size: 15px;
+  font-size: 93.75%;
   font-weight: 400;
   color: var(--color-secondary);
   background-color: var(--color-secondary);
 }
 
 .recent-posts .post-box .post-title {
-  font-size: 18px;
+  font-size: 112.5%;
   color: var(--color-secondary);
   font-weight: 700;
   margin: 15px 0 0 0;
@@ -1957,13 +1957,13 @@ color: #2D4FA2;
   font-weight: 600;
   line-height: 1;
   transition: 0.3s;
-  margin-top: 15px;
+  margin-top: 93.75%;
 }
 
 .recent-posts .post-box .readmore i {
   line-height: 0;
   margin-left: 4px;
-  font-size: 18px;
+  font-size: 112.5%;
 }
 
 .recent-posts .post-box:hover .post-title {
@@ -1989,11 +1989,11 @@ color: #2D4FA2;
 
 .team blockquote {
   color: var(--color-secondary);
-  padding-left: 20px;
-  font-size: 15px;
+  padding-left: 125%;
+  font-size: 93.75%;
   font-family: var(--font-primary);
   border-left: 2px solid var(--color-default);
-  margin: 40px 0;
+  margin: 250% 0;
 }
 
 .team .team-member .social {
@@ -2001,7 +2001,7 @@ color: #2D4FA2;
   left: 0;
   bottom: 0;
   right: 0;
-  height: 40px;
+  height: auto;
   opacity: 0;
   transition: ease-in-out 0.3s;
   background: rgba(255, 255, 255, 0.85);
@@ -2028,7 +2028,7 @@ color: #2D4FA2;
 }
 
 .team .team-member .social i {
-  font-size: 18px;
+  font-size: 112.5%;
   margin: 0 2px;
 }
 
@@ -2039,22 +2039,22 @@ color: #2D4FA2;
 
 .team .team-member .member-info h4 {
   font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
+  margin-bottom: 31.25%;
+  font-size: 112.5%;
   color: var(--color-secondary);
 }
 
 .team .team-member .member-info span {
   display: block;
-  font-size: 13px;
+  font-size: 81.25%;
   font-weight: 400;
   color: #6c757d;
 }
 
 .team .team-member .member-info p {
   font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 87.5%;
+  line-height: auto;
   color: #6c757d;
 }
 
