@@ -1166,7 +1166,7 @@ color: #2D4FA2;
   }
 }
 
-@media (max-width: 4800%),
+@media (max-width: 768px),
 (max-height: 700px) {
   #hero {
     height: 120vh;
@@ -1174,7 +1174,7 @@ color: #2D4FA2;
   }
 
   #hero h2 {
-    font-size: 175%;
+    font-size: 28px;
   }
 }
 
