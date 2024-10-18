@@ -1065,12 +1065,12 @@ color: #2D4FA2;
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: auto;
   overflow: hidden;
   position: relative;
   background-color: white;
-  background-size: 1500px 900px;
-  margin-bottom: -90px;
+  background-size: 9375% 5625%;
+  margin-bottom: -3.6vh;
   z-index: 99;
   transition: 0.3s;
 }
@@ -1100,8 +1100,8 @@ color: #2D4FA2;
 
 #hero h2 {
   color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
+  margin-bottom: 187.5%;
+  font-size: 300%;
   font-weight: 700;
   text-align: right;
 }
@@ -1109,10 +1109,10 @@ color: #2D4FA2;
 #hero p {
   width: 100%;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 187.5% auto;
   color: #fff;
   text-align: right;
-  font-size: 25px;
+  font-size: 156.25%;
 }
 
 #hero .test{
@@ -1127,7 +1127,7 @@ color: #2D4FA2;
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
   background: none;
-  font-size: 48px;
+  font-size: 300%;
   line-height: 1;
   width: auto;
   height: auto;
@@ -1136,17 +1136,17 @@ color: #2D4FA2;
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 87.5%;
+  letter-spacing: 6.25%;
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 50px;
+  border-radius: 312.5%;
   transition: 0.5s;
   line-height: 1;
-  margin: 10px;
+  margin: 62.5%;
   color: #fff;
   animation-delay: 0.8s;
-  border: 2px solid #f6b024;
+  border: 12.5% solid #f6b024;
 }
 
 #hero .btn-get-started:hover {
@@ -1155,7 +1155,7 @@ color: #2D4FA2;
   text-decoration: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 6400%) {
   #hero p {
     width: 60%;
   }
@@ -1166,7 +1166,7 @@ color: #2D4FA2;
   }
 }
 
-@media (max-width: 768px),
+@media (max-width: 4800%),
 (max-height: 700px) {
   #hero {
     height: 120vh;
@@ -1174,7 +1174,7 @@ color: #2D4FA2;
   }
 
   #hero h2 {
-    font-size: 28px;
+    font-size: 175%;
   }
 }
 
