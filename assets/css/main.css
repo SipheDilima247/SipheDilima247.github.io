@@ -1920,11 +1920,11 @@ color: #2D4FA2;
 }
 
 .recent-posts .post-box .meta {
-  margin-top: 15px;
+  margin-top: 93.75%;
 }
 
 .recent-posts .post-box .meta .post-date {
-  font-size: 15px;
+  font-size: 93.75%;
   font-weight: 400;
   color: var(--color-primary);
   background-color: var(--color-secondary);
@@ -1962,7 +1962,7 @@ color: #2D4FA2;
 
 .recent-posts .post-box .readmore i {
   line-height: 0;
-  margin-left: 4px;
+  margin-left: 25%;
   font-size: 112.5%;
 }
 
