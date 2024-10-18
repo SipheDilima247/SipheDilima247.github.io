@@ -642,7 +642,7 @@ section {
 #topbar .social-links i {
   color: rgba(255, 255, 255, 255);
   line-height: 0;
-  margin-right: 5px;
+  margin-right: 31.25%;
 
 }
 
@@ -656,7 +656,7 @@ section {
   padding: 6px 24px 8px 24px;
   display: inline-block;
   transition: 0.3s;
-  border-radius: 50px;
+  border-radius: 312.5%;
 }
 
 #topbar .cta a:hover {
