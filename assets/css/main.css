@@ -1345,13 +1345,13 @@ color: #2D4FA2;
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 225%;
   font-family: var(--font-secondary);
   color: var(--color-secondary);
 }
 
 .about .content p {
-  margin: 30px 0;
+  margin: 225% 0;
   color: #29486a;
 }
 
@@ -1363,20 +1363,20 @@ color: #2D4FA2;
 .about .content ul li {
   padding: 0 0 15px 26px;
   position: relative;
-  font-size: 15px;
+  font-size: 93.75%;
   font-weight: 600;
 }
 
 .about .content ul i {
   position: absolute;
-  font-size: 20px;
+  font-size: 125%;
   left: 0;
-  top: -3px;
+  top: -18.75%;
   color: var(--color-primary);
 }
 
 .about .sign-in-btn{
-    padding-inline: 10px;
+    padding-inline: 1vh;
     border-radius: 15pt;
     background-color: var(--color-primary);
     color: #fff;
