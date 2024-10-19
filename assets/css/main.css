@@ -109,31 +109,31 @@ section {
 }
 
 .icon-boxes .icon-box {
-  padding: 40px 30px;
+  padding: 250% 187.5%;
   position: relative;
   overflow: hidden;
   background: #fff;
-  box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
+  box-shadow: 31.25% 62.5% 181.25% 0 rgba(68, 88, 144, 0.2);
   transition: all 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 62.5%;
 }
 
 .icon-boxes .icon {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 125% auto;
   display: inline-block;
   text-align: center;
 }
 
 .icon-boxes .icon i {
-  font-size: 36px;
+  font-size: 225%;
   line-height: 1;
   color: #f6b024;
 }
 
 .icon-boxes .title {
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 93.75%;
+  font-size: 175%;
 }
 
 .icon-boxes .title a {
@@ -141,16 +141,16 @@ section {
 }
 
 .icon-boxes .description {
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 93.75%;
+  line-height: 175%;
   margin-bottom: 0;
   color: #777777;
 }
 
 .icon-boxes .sidebar .search-form{
   background: #fff;
-  border: 1px solid rgba(27, 47, 69, 0.2);
-  padding: 3px 10px;
+  border: 6.25% solid rgba(27, 47, 69, 0.2);
+  padding: 18.75% 62.5%;
   position: relative;
 }
 
