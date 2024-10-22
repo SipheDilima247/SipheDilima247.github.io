@@ -2069,7 +2069,7 @@ color: #2D4FA2;
 }
 
 .services-cards .card-item {
-  border: 1px solid rgba(27, 47, 69, 0.1);
+  border: 6.25% solid rgba(27, 47, 69, 0.1);
   background: #fff;
   position: relative;
   border-radius: 0;
@@ -2083,7 +2083,7 @@ color: #2D4FA2;
   }
   
 .services-cards .card-item .card-bg {
-  min-height: 300px;
+  min-height: 1875%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2094,8 +2094,8 @@ color: #2D4FA2;
 
 .services-cards .card-item h4 {
   font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 125%;
+  margin-bottom: 93.75%;
   color: var(--color-secondary);
 }
 
@@ -2594,43 +2594,42 @@ color: #2D4FA2;
 # Blog Details Page
 --------------------------------------------------------------*/
 .blog .blog-details {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25% 100% rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
 
 .blog .blog-details .post-img {
-  margin: -30px -30px 20px -30px;
+  margin: -187.5% -187.5% 125% -187.5%;
   overflow: hidden;
 }
 
 .blog .blog-details .title {
-  font-size: 28px;
+  font-size: 175%;
   font-weight: 700;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 125% 0 0 0;
   color: var(--color-secondary);
 }
 
 .blog .blog-details .content {
-  height: 220px;
-  background-color: black;
-  margin-top: 20px;
-  top: -180px;
-  width: 2000px;
-  left: -70px;
+  height: 22vh;
+  background-color: white;
+  margin-top: 2vh;
+  top: -18vh;
+  width: 100%;
   
 }
 
 .blog .blog-details .content h3 {
-  font-size: 22px;
-  margin-top: 30px;
+  font-size: 137.5%;
+  margin-top: 187.5%;
   font-weight: bold;
 }
 
 .blog .blog-details .content blockquote {
-  height: 220px;
-  width: 1520px;
-  left: 10px;
+  height: 1375%;
+  width: 100%;
+  left: 1vh;
   overflow: hidden;
   background-color: rgba(27, 47, 69, 0.06);
   padding: 60px;
