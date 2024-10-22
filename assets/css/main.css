@@ -1255,10 +1255,9 @@ color: #2D4FA2;
 }
 
 .why-us .img-bg {
-  min-height: 3125%;
-  height: 62.5%;
-  width: 25vh;
-  background-size: cover;
+  object-fit: fit;
+  width: 15%;
+  top: -1300%;
   color: white;
   opacity: 0;
 }
