@@ -2612,9 +2612,8 @@ color: #2D4FA2;
 }
 
 .blog .blog-details .content {
-  height: 22vh;
+  height: auto;
   background-color: white;
-  margin-top: 2vh;
   top: -18vh;
   width: 100%;
   
@@ -2632,19 +2631,19 @@ color: #2D4FA2;
   left: 1vh;
   overflow: hidden;
   background-color: rgba(27, 47, 69, 0.06);
-  padding: 60px;
+  padding: 6vh;
   position: relative;
   text-align: center;
-  margin: 20px 0;
+  margin: -4vh 0;
 }
 
 .blog .blog-details .content blockquote p {
   color: var(--color-default);
-  line-height: 1.6;
+  line-height: 1;
   margin-bottom: 0;
   font-style: italic;
-  font-weight: 500;
-  font-size: 19px;
+  font-weight: 1000;
+  font-size: 118.75%;
 }
 
 .blog .blog-details .content blockquote:after {
