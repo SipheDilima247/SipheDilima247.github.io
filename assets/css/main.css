@@ -584,7 +584,7 @@ section {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  height: auto;
+  height: 10%;
   padding: 0;
   font-size: 87.5%;
   transition: all 0.5s;
@@ -1065,11 +1065,10 @@ color: #2D4FA2;
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: auto;
+  height: 100%;
   overflow: hidden;
   position: relative;
   background-color: white;
-  background-size: 9375% 5625%;
   margin-bottom: -3.6vh;
   z-index: 99;
   transition: 0.3s;
@@ -1263,7 +1262,7 @@ color: #2D4FA2;
 }
 
 .why-us .slides {
-  background-color: white;
+  background-color: #F7F7F7;
 }
 
 .why-us h3 {
@@ -1972,6 +1971,80 @@ color: #2D4FA2;
 .recent-posts .post-box:hover .post-img img {
   transform: scale(1.1);
 }
+
+@media(max-width: 768px) {
+  
+
+
+
+.recent-posts .post-box .post-img {
+  overflow: hidden;
+  position: relative;
+   color: var(--color-default);
+   background-color: var(--font-default) ;
+}
+
+.recent-posts .post-box .post-img img {
+  transition: 0.5s;
+}
+
+.recent-posts .post-box .meta {
+  margin-top: 93.75%;
+}
+
+.recent-posts .post-box .meta .post-date {
+  font-size: 93.75%;
+  font-weight: 400;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.recent-posts .post-box .meta .post-author {
+  font-size: 93.75%;
+  font-weight: 400;
+  color: var(--color-secondary);
+  background-color: var(--color-secondary);
+}
+
+.recent-posts .post-box .post-title {
+  font-size: 112.5%;
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin: 15px 0 0 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+.recent-posts .post-box p {
+  margin: 15px 0 0 0;
+  color: rgba(27, 47, 69, 0.7);
+}
+
+.recent-posts .post-box .readmore {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.3s;
+  margin-top: 93.75%;
+}
+
+.recent-posts .post-box .readmore i {
+  line-height: 0;
+  margin-left: 25%;
+  font-size: 112.5%;
+}
+
+.recent-posts .post-box:hover .post-title {
+  color: var(--color-primary);
+}
+
+.recent-posts .post-box:hover .post-img img {
+  transform: scale(1.1);
+}
+
+}
+
 
 /*--------------------------------------------------------------
 # Team Section
