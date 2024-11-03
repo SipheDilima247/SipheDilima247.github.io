@@ -28,52 +28,130 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <style type="text/css">
-  @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-.intro {
-  height: 100vh;
+    .hero-slideshow {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1rem;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
-.intro-slideshow img {
+
+.slide {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
-  height: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
-  object-fit: cover;
-  z-index:-1;
-  /* filter: brightness(50%); */ /* 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
-  /* display: none; */
-  opacity: 0;
-  transition: opacity 0.75s ease-in-out;
-}
-/* .intro-slideshow img:first-child {
-  display: block;
-  opacity: 1;
-} */
-.intro .intro-header {
-  border-radius: 0.5rem;
-  padding: 2rem 2.5rem;
-  background-color: rgba(0,0,0,0.5);
-}
-.intro h1 {
-  font-size: 4rem;
-  margin-bottom: 0.75rem;
-}
-.intro p {
-  font-size: 1.75rem;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
-@media (max-width: 700px) {
-  html { font-size: 12px; }
-  .intro-header { padding: 1.5rem 2rem; }
-  .intro h1 { font-size: 2.5rem; }
-  .intro p { font-size: 1.25rem; }
+.slide img {
+  width: 100%;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+  </style>
+<style type="text/css">
+  /* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Position the image container (width no longer 100%, now it matches the width of the image it contains) */
+.container1 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
 }
 </style>
 
@@ -327,16 +405,33 @@
     </div>
   </header><br><br><br><br><br><br>
 
-  <div class="intro">
-  <div class="intro-slideshow">
-    <img src="assets/img/Website/Banners/Welcome banner.svg">
-    <img src="assets/img/Website/Banners/Call for Nominations.jpg">
+  <!-- Hero section slideshow -->
+<section class="hero-slideshow">
+  <!-- Slides -->
+  <div class="slide">
+    <img src="assets/img/Website/Banners/Welcome banner.jpg" alt="Slide 1">
+    
   </div>
-  <!--<div class="intro-header">
-    <h1>Coding Journey</h1>
-    <p>It's all about the journey</p>
-  </div> -->
+  <div class="slide">
+    <img src="assets/img/Website/Banners/Call for Nominations.jpg" alt="Slide 2">
+    
+  </div>
+  <div class="slide">
+    <img src="assets/img/Website/Banners/Identification of Engineering Work.jpg" alt="Slide 3">
+    
 </div>
+
+
+  <!-- Navigation buttons -->
+  <button class="prev" style="background-color: transparent;"><i class="bi bi-arrow-left" style="color: #f59d22"></i></button>
+  <button class="next" style="background-color: transparent;"><i class="bi bi-arrow-right" style="color: #f59d22"></i></button>
+  <!-- Navigation dots -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
 
   <main class="main">
 
@@ -851,6 +946,69 @@ function nextImage() {
   // slideshowImages[currentImageCounter].style.display = "block";
   slideshowImages[currentImageCounter].style.opacity = 1;
 }
+  </script>
+  <script type="text/javascript">
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+  </script>
+  <script type="text/javascript">
+    const slideshow = document.querySelector('.hero-slideshow');
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const dots = document.querySelectorAll('.dot');
+
+let currentSlide = 0;
+const slideCount = slides.length;
+
+// Navigate between slides
+prevButton.addEventListener('click', () => {
+  currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+  updateSlide();
+});
+
+nextButton.addEventListener('click', () => {
+  currentSlide = (currentSlide + 1) % slideCount;
+  updateSlide();
+});
+
+// Update slide display
+function updateSlide() {
+  slides.forEach((slide, index) => {
+    slide.style.display = index === currentSlide ? 'block' : 'none';
+  });
+
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+// Automate slideshow
+setInterval(() => {
+  nextButton.click();
+}, 5000); // Change slide every 5 seconds
+
+// Initialize first slide display
+slides[0].style.display = 'block';
+dots[0].classList.add('active');
+
+
   </script>
 
 </body>

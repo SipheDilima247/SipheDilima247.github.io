@@ -228,6 +228,7 @@ h6 {
   overflow: hidden;
   background-color: #1b2f45;
   z-index: 996;
+  height: 8.5vh;
 }
 
 #topbar.topbar-scrolled {
