@@ -1841,7 +1841,7 @@ section,
 --------------------------------------------------------------*/
 .REF .post-box {
   transition: 0.3s;
-  height: auto;
+  height: 40vh;
   overflow: hidden;
   position: relative;
   display: flex;
