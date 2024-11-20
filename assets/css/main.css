@@ -228,7 +228,7 @@ h6 {
   overflow: hidden;
   background-color: #1b2f45;
   z-index: 996;
-  height: 8.5vh;
+  height: 8.5%;
 }
 
 #topbar.topbar-scrolled {
@@ -1939,6 +1939,10 @@ section,
   font-size: 1.25rem;
   line-height: 1.2;
   margin-right: 0.5rem;
+
+  .about .btn sign-in-btn {
+    align-items: center;
+  }
 }
 
 /*--------------------------------------------------------------
