@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Consensus — Independent Research & Collective Insight</title>
+  <meta name="description" content="Independent economic and financial research synthesised with institutional analysis and community insights." />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Merriweather', 'Georgia', 'serif'],
+          },
+          colors: {
+            nexus: {
+              50:  '#f0f4ff',
+              100: '#e0e9ff',
+              200: '#c7d6fe',
+              300: '#a4b8fc',
+              400: '#8193f8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-feature-settings: "cv02", "cv03", "cv04", "cv11"; }
+    .prose-custom h2 { @apply text-2xl font-semibold mt-10 mb-4 text-slate-900 dark:text-slate-100; }
+    .prose-custom p { @apply text-slate-700 dark:text-slate-300 leading-relaxed mb-5; }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+
+  <!-- ========== HEADER ========== -->
+  <header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-nexus-600 flex items-center justify-center text-white font-bold text-sm">N</div>
+          <span class="font-semibold text-lg tracking-tight">Nexus <span class="text-nexus-600 dark:text-nexus-400">Consensus</span></span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="insights.html" class="text-slate-600 dark:text-slate-300 hover:text-nexus-600 dark:hover:text-nexus-400 transition">Insights</a>
+          <a href="community.html" class="text-slate-600 dark:text-slate-300 hover:text-nexus-600 dark:hover:text-nexus-400 transition">Community</a>
+          <a href="track-record.html" class="text-slate-600 dark:text-slate-300 hover:text-nexus-600 dark:hover:text-nexus-400 transition">Track Record</a>
+          <a href="about.html" class="text-slate-600 dark:text-slate-300 hover:text-nexus-600 dark:hover:text-nexus-400 transition">About</a>
+        </nav>
+
+        <!-- Right side -->
+        <div class="flex items-center gap-3">
+          <button id="theme-toggle" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle dark mode">
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="#subscribe" class="hidden sm:inline-flex items-center px-4 py-2 bg-nexus-600 hover:bg-nexus-700 text-white text-sm font-medium rounded-lg transition">
+            Subscribe
+          </a>
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
+      <div class="px-4 py-3 space-y-2">
+        <a href="insights.html" class="block py-2 text-slate-700 dark:text-slate-200">Insights</a>
+        <a href="community.html" class="block py-2 text-slate-700 dark:text-slate-200">Community</a>
+        <a href="track-record.html" class="block py-2 text-slate-700 dark:text-slate-200">Track Record</a>
+        <a href="about.html" class="block py-2 text-slate-700 dark:text-slate-200">About</a>
+        <a href="#subscribe" class="block py-2 text-nexus-600 font-medium">Subscribe</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-nexus-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900"></div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-20 lg:pt-24 lg:pb-28">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-nexus-100 dark:bg-nexus-900/40 text-nexus-700 dark:text-nexus-300 text-xs font-medium mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-nexus-500 animate-pulse"></span>
+          Independent Research Platform
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+          Independent research.<br>
+          <span class="text-nexus-600 dark:text-nexus-400">Collective insight.</span>
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
+          Nexus Consensus synthesises institutional analysis from sources like the IMF, BIS and major banks with independent research and community perspectives — so you can see the full picture.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="insights.html" class="inline-flex items-center justify-center px-6 py-3 bg-nexus-600 hover:bg-nexus-700 text-white font-medium rounded-lg transition shadow-sm">
+            Read Latest Insights
+          </a>
+          <a href="community.html" class="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:border-nexus-400 text-slate-700 dark:text-slate-200 font-medium rounded-lg transition">
+            Contribute an Insight
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED INSIGHTS ========== -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Latest Insights</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-400">Research-backed analysis and market perspectives</p>
+      </div>
+      <a href="insights.html" class="hidden sm:inline-flex text-sm font-medium text-nexus-600 dark:text-nexus-400 hover:underline">
+        View all →
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <article class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden hover:border-nexus-300 dark:hover:border-nexus-700 transition">
+        <div class="h-40 bg-gradient-to-br from-nexus-100 to-slate-100 dark:from-nexus-900/40 dark:to-slate-800 flex items-center justify-center">
+          <span class="text-nexus-600 dark:text-nexus-400 text-sm font-medium">Macro</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-3">
+            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800">Macro</span>
+            <span>•</span>
+            <time>Aug 18, 2026</time>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-900 dark:text-white group-hover:text-nexus-600 dark:group-hover:text-nexus-400 transition leading-snug">
+            <a href="posts/sample-post.html">Global growth resilience amid policy divergence</a>
+          </h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 line-clamp-2">
+            Despite tighter financial conditions in several advanced economies, recent data from the IMF and national accounts suggest underlying demand remains more durable than many models predicted...
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden hover:border-nexus-300 dark:hover:border-nexus-700 transition">
+        <div class="h-40 bg-gradient-to-br from-emerald-50 to-slate-100 dark:from-emerald-900/20 dark:to-slate-800 flex items-center justify-center">
+          <span class="text-emerald-600 dark:text-emerald-400 text-sm font-medium">Markets</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-3">
+            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800">Markets</span>
+            <span>•</span>
+            <time>Aug 14, 2026</time>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-900 dark:text-white group-hover:text-nexus-600 dark:group-hover:text-nexus-400 transition leading-snug">
+            <a href="posts/sample-post.html">Term premia and the quiet return of bond vigilance</a>
+          </h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 line-clamp-2">
+            Long-dated yields have begun reflecting more than just policy path expectations. Drawing on BIS research and recent Treasury market dynamics...
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden hover:border-nexus-300 dark:hover:border-nexus-700 transition">
+        <div class="h-40 bg-gradient-to-br from-amber-50 to-slate-100 dark:from-amber-900/20 dark:to-slate-800 flex items-center justify-center">
+          <span class="text-amber-600 dark:text-amber-400 text-sm font-medium">Data</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-3">
+            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800">Data</span>
+            <span>•</span>
+            <time>Aug 9, 2026</time>
+          </div>
+          <h3 class="font-semibold text-lg text-slate-900 dark:text-white group-hover:text-nexus-600 dark:group-hover:text-nexus-400 transition leading-snug">
+            <a href="posts/sample-post.html">Labour market signals: what the latest revisions actually mean</a>
+          </h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 line-clamp-2">
+            Annual benchmark revisions and the household survey have painted a more nuanced picture than headline payrolls. Here’s how we interpret the combined evidence...
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-8 text-center sm:hidden">
+      <a href="insights.html" class="text-sm font-medium text-nexus-600 dark:text-nexus-400">View all insights →</a>
+    </div>
+  </section>
+
+  <!-- ========== COMMUNITY TEASER ========== -->
+  <section class="bg-slate-50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Community Insights</h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+            Research is stronger when tested against diverse perspectives. Share your observations, charts, or alternative interpretations. High-quality contributions are featured alongside institutional and independent analysis.
+          </p>
+          <a href="community.html" class="mt-6 inline-flex items-center gap-2 text-nexus-600 dark:text-nexus-400 font-medium hover:underline">
+            Explore & contribute
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6">
+          <div class="text-sm text-slate-500 dark:text-slate-400 mb-3">Recent community contribution</div>
+          <blockquote class="text-slate-700 dark:text-slate-200 italic">
+            “The divergence between soft and hard data on services activity is wider than most models are currently pricing. Looking at regional Fed surveys alongside PMI components suggests…”
+          </blockquote>
+          <div class="mt-4 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+            <div class="text-sm">
+              <div class="font-medium text-slate-900 dark:text-white">Anonymous Contributor</div>
+              <div class="text-slate-500 dark:text-slate-400">Aug 16, 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY NEXUS ========== -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Why Nexus Consensus</h2>
+      <p class="mt-3 text-slate-600 dark:text-slate-400">A different approach to economic and market research</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-nexus-100 dark:bg-nexus-900/40 flex items-center justify-center text-nexus-600 dark:text-nexus-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="font-semibold text-lg text-slate-900 dark:text-white">Institutional grounding</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Analysis anchored in research from the IMF, BIS, major central banks and leading institutions — not just opinion.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-nexus-100 dark:bg-nexus-900/40 flex items-center justify-center text-nexus-600 dark:text-nexus-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-semibold text-lg text-slate-900 dark:text-white">Independent synthesis</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Clear framing, original interpretation, and market-relevant conclusions beyond the official narrative.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-nexus-100 dark:bg-nexus-900/40 flex items-center justify-center text-nexus-600 dark:text-nexus-400 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        </div>
+        <h3 class="font-semibold text-lg text-slate-900 dark:text-white">Open to challenge</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Community perspectives and alternative readings are actively invited and featured when they add signal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SUBSCRIBE ========== -->
+  <section id="subscribe" class="bg-nexus-600 dark:bg-nexus-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white">Stay ahead of the consensus</h2>
+      <p class="mt-3 text-nexus-100">
+        Receive new insights, data notes, and community highlights directly in your inbox. Free. No noise.
+      </p>
+      <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Subscription form placeholder — connect to your email provider later.');">
+        <input type="email" required placeholder="you@email.com" 
+               class="flex-1 px-4 py-3 rounded-lg border-0 text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-white/50" />
+        <button type="submit" class="px-6 py-3 bg-white text-nexus-700 font-semibold rounded-lg hover:bg-nexus-50 transition">
+          Subscribe
+        </button>
+      </form>
+      <p class="mt-4 text-xs text-nexus-200">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-2.5 mb-4">
+            <div class="w-7 h-7 rounded-lg bg-nexus-600 flex items-center justify-center text-white font-bold text-xs">N</div>
+            <span class="font-semibold">Nexus Consensus</span>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 max-w-sm">
+            Independent economic research synthesised with institutional analysis and community insight.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm mb-3">Explore</h4>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+            <li><a href="insights.html" class="hover:text-nexus-600 dark:hover:text-nexus-400">Insights</a></li>
+            <li><a href="community.html" class="hover:text-nexus-600 dark:hover:text-nexus-400">Community</a></li>
+            <li><a href="track-record.html" class="hover:text-nexus-600 dark:hover:text-nexus-400">Track Record</a></li>
+            <li><a href="about.html" class="hover:text-nexus-600 dark:hover:text-nexus-400">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm mb-3">Legal</h4>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+            <li><a href="#" class="hover:text-nexus-600 dark:hover:text-nexus-400">Disclaimer</a></li>
+            <li><a href="#" class="hover:text-nexus-600 dark:hover:text-nexus-400">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-nexus-600 dark:hover:text-nexus-400">Sources & Methodology</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+        <p>© 2026 Nexus Consensus. All rights reserved.</p>
+        <p>This site provides research and analysis for informational purposes only and does not constitute investment advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    // Check saved preference or system
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+
+    // Mobile menu
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

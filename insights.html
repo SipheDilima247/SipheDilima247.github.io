@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights — Nexus Consensus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            nexus: { 50:'#f0f4ff',100:'#e0e9ff',200:'#c7d6fe',300:'#a4b8fc',400:'#8193f8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81' }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-nexus-600 flex items-center justify-center text-white font-bold text-sm">N</div>
+          <span class="font-semibold text-lg tracking-tight">Nexus <span class="text-nexus-600 dark:text-nexus-400">Consensus</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="insights.html" class="text-nexus-600 dark:text-nexus-400">Insights</a>
+          <a href="community.html" class="text-slate-600 dark:text-slate-300 hover:text-nexus-600 dark:hover:text-nexus-400">Community</a>
+          <a href="track-record.html" class="text-slate-600 dark:text-slate-300 hover:text-nexus-600 dark:hover:text-nexus-400">Track Record</a>
+          <a href="about.html" class="text-slate-600 dark:text-slate-300 hover:text-nexus-600 dark:hover:text-nexus-400">About</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="theme-toggle" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+          <a href="index.html#subscribe" class="hidden sm:inline-flex px-4 py-2 bg-nexus-600 hover:bg-nexus-700 text-white text-sm font-medium rounded-lg">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="mb-10">
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">Insights</h1>
+      <p class="mt-2 text-slate-600 dark:text-slate-400">Research-backed analysis, market perspectives, and data notes</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-2 mb-8">
+      <button class="px-3 py-1.5 rounded-full text-sm font-medium bg-nexus-600 text-white">All</button>
+      <button class="px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">Macro</button>
+      <button class="px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">Markets</button>
+      <button class="px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">Data</button>
+      <button class="px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">Policy</button>
+    </div>
+
+    <!-- Posts list -->
+    <div class="space-y-6">
+      <article class="group flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-nexus-300 dark:hover:border-nexus-700 transition">
+        <div class="sm:w-48 h-32 sm:h-auto rounded-lg bg-gradient-to-br from-nexus-100 to-slate-100 dark:from-nexus-900/40 dark:to-slate-800 flex-shrink-0"></div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-2">
+            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800">Macro</span>
+            <time>Aug 18, 2026</time>
+            <span>•</span>
+            <span>8 min read</span>
+          </div>
+          <h2 class="text-xl font-semibold text-slate-900 dark:text-white group-hover:text-nexus-600 dark:group-hover:text-nexus-400 transition">
+            <a href="posts/sample-post.html">Global growth resilience amid policy divergence</a>
+          </h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            Despite tighter financial conditions in several advanced economies, recent data from the IMF and national accounts suggest underlying demand remains more durable than many models predicted. We examine the key drivers and what it means for the second half of 2026.
+          </p>
+        </div>
+      </article>
+
+      <article class="group flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-nexus-300 dark:hover:border-nexus-700 transition">
+        <div class="sm:w-48 h-32 sm:h-auto rounded-lg bg-gradient-to-br from-emerald-50 to-slate-100 dark:from-emerald-900/20 dark:to-slate-800 flex-shrink-0"></div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-2">
+            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800">Markets</span>
+            <time>Aug 14, 2026</time>
+            <span>•</span>
+            <span>6 min read</span>
+          </div>
+          <h2 class="text-xl font-semibold text-slate-900 dark:text-white group-hover:text-nexus-600 dark:group-hover:text-nexus-400 transition">
+            <a href="posts/sample-post.html">Term premia and the quiet return of bond vigilance</a>
+          </h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            Long-dated yields have begun reflecting more than just policy path expectations. Drawing on BIS research and recent Treasury market dynamics, we assess the risks of a sustained rise in term premia.
+          </p>
+        </div>
+      </article>
+
+      <article class="group flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-nexus-300 dark:hover:border-nexus-700 transition">
+        <div class="sm:w-48 h-32 sm:h-auto rounded-lg bg-gradient-to-br from-amber-50 to-slate-100 dark:from-amber-900/20 dark:to-slate-800 flex-shrink-0"></div>
+        <div class="flex-1">
+          <div class="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-2">
+            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800">Data</span>
+            <time>Aug 9, 2026</time>
+            <span>•</span>
+            <span>7 min read</span>
+          </div>
+          <h2 class="text-xl font-semibold text-slate-900 dark:text-white group-hover:text-nexus-600 dark:group-hover:text-nexus-400 transition">
+            <a href="posts/sample-post.html">Labour market signals: what the latest revisions actually mean</a>
+          </h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            Annual benchmark revisions and the household survey have painted a more nuanced picture than headline payrolls. Here’s how we interpret the combined evidence and the implications for policy.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
+      © 2026 Nexus Consensus · Research for informational purposes only
+    </div>
+  </footer>
+
+  <script>
+    const html = document.documentElement;
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+    }
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+  </script>
+</body>
+</html>
