@@ -1,0 +1,21 @@
+{
+  "name": "nexus-consensus",
+  "version": "1.0.0",
+  "description": "Economic research with subscription feature",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "cd server && nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "nodemailer": "^6.9.1",
+    "sqlite3": "^5.1.6",
+    "validator": "^13.9.0"
+  }
+}
